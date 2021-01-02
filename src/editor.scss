@@ -1,0 +1,15 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ */
+
+/* overrides the :after styling of gutenberg */
+.block-editor-block-list__layout .wp-block-us-starter-block::after {
+	top: 0;
+	margin-top: -32px;
+	content: 'Info';
+	position: absolute;
+    color: #fff;
+    left: 2rem;
+    font-weight: bold;
+}

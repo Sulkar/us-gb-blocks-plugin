@@ -1,0 +1,31 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ */
+
+.wp-block-us-starter-block {
+	position: relative;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+    border-top: 30px solid #6AB0DE;
+    background: #E7F2FA;
+}
+.wp-block-us-starter-block:before {
+	margin-top: -25px;
+	display: block;
+	content: ' ';
+	background-image: url('./info.svg');
+	background-size: 20px 20px;
+	height: 20px;
+	width: 20px;
+}
+.wp-block-us-starter-block::after {
+	top: 0;
+	margin-top: -32px;
+	content: 'Info';
+	position: absolute;
+    color: #fff;
+    left: 2rem;
+    font-weight: bold;
+}
