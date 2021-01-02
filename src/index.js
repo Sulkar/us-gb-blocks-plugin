@@ -11,9 +11,9 @@ import './style.scss';
 import './editor.scss';
 
 
-registerBlockType( 'us/starter-block', {
+registerBlockType( 'us/info-block', {
 	apiVersion: 2,
-	title: __( 'Starter Block', 'starter-block' ),
+	title: __( 'US Info Quote', 'info-block' ),
 	description: __(
 		'Example block written with ESNext standard and JSX support – build step required.',
 		'starter-block'
@@ -58,4 +58,151 @@ registerBlockType( 'us/starter-block', {
 		);
     },
 
-} );
+});
+
+registerBlockType( 'us/alert-block', {
+	apiVersion: 2,
+	title: __( 'US Achtung Quote', 'alert-block' ),
+	description: __(
+		'Example block written with ESNext standard and JSX support – build step required.',
+		'starter-block'
+	),
+	category: 'common',
+	icon: 'info-outline',
+	supports: {
+		// Removes support for an HTML mode.
+		html: false,
+	},
+	attributes: {
+        content: {
+            type: 'string',
+            source: 'html',
+            selector: 'p',
+        },
+    },
+ 
+	edit: ( { attributes, setAttributes } ) => {	
+		const blockProps = useBlockProps();
+				     
+		return (
+			
+			<RichText	
+				{ ...blockProps }			
+				tagName="p"
+				value={ attributes.content }
+				formattingControls={ [ 'bold', 'italic' ] }
+				onChange={ ( content ) => setAttributes( { content } ) }
+				placeholder={ __( 'Heading...' ) }
+			/>	
+			
+		);
+    },
+ 
+    save: ( { attributes } ) => {
+		const blockProps = useBlockProps.save();
+		return (	
+			
+			<RichText.Content { ...blockProps } tagName="p" value={ attributes.content } />						
+			
+		);
+    },
+
+});
+
+registerBlockType( 'us/notiz-block', {
+	apiVersion: 2,
+	title: __( 'US Notiz Quote', 'notiz-block' ),
+	description: __(
+		'Example block written with ESNext standard and JSX support – build step required.',
+		'starter-block'
+	),
+	category: 'common',
+	icon: 'info-outline',
+	supports: {
+		// Removes support for an HTML mode.
+		html: false,
+	},
+	attributes: {
+        content: {
+            type: 'string',
+            source: 'html',
+            selector: 'p',
+        },
+    },
+ 
+	edit: ( { attributes, setAttributes } ) => {	
+		const blockProps = useBlockProps();
+				     
+		return (
+			
+			<RichText	
+				{ ...blockProps }			
+				tagName="p"
+				value={ attributes.content }
+				formattingControls={ [ 'bold', 'italic' ] }
+				onChange={ ( content ) => setAttributes( { content } ) }
+				placeholder={ __( 'Heading...' ) }
+			/>	
+			
+		);
+    },
+ 
+    save: ( { attributes } ) => {
+		const blockProps = useBlockProps.save();
+		return (	
+			
+			<RichText.Content { ...blockProps } tagName="p" value={ attributes.content } />						
+			
+		);
+    },
+
+});
+
+registerBlockType( 'us/tipp-block', {
+	apiVersion: 2,
+	title: __( 'US Tipp Quote', 'tipp-block' ),
+	description: __(
+		'Example block written with ESNext standard and JSX support – build step required.',
+		'starter-block'
+	),
+	category: 'common',
+	icon: 'info-outline',
+	supports: {
+		// Removes support for an HTML mode.
+		html: false,
+	},
+	attributes: {
+        content: {
+            type: 'string',
+            source: 'html',
+            selector: 'p',
+        },
+    },
+ 
+	edit: ( { attributes, setAttributes } ) => {	
+		const blockProps = useBlockProps();
+				     
+		return (
+			
+			<RichText	
+				{ ...blockProps }			
+				tagName="p"
+				value={ attributes.content }
+				formattingControls={ [ 'bold', 'italic' ] }
+				onChange={ ( content ) => setAttributes( { content } ) }
+				placeholder={ __( 'Heading...' ) }
+			/>	
+			
+		);
+    },
+ 
+    save: ( { attributes } ) => {
+		const blockProps = useBlockProps.save();
+		return (	
+			
+			<RichText.Content { ...blockProps } tagName="p" value={ attributes.content } />						
+			
+		);
+    },
+
+});

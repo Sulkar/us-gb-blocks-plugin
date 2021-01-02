@@ -244,9 +244,9 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__["registerBlockType"])('us/starter-block', {
+Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__["registerBlockType"])('us/info-block', {
   apiVersion: 2,
-  title: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('Starter Block', 'starter-block'),
+  title: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('US Info Quote', 'info-block'),
   description: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('Example block written with ESNext standard and JSX support – build step required.', 'starter-block'),
   category: 'common',
   icon: 'info-outline',
@@ -279,6 +279,132 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__["registerBlockType"])('us/
   },
   save: function save(_ref2) {
     var attributes = _ref2.attributes;
+    var blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["useBlockProps"].save();
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["RichText"].Content, _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, blockProps, {
+      tagName: "p",
+      value: attributes.content
+    }));
+  }
+});
+Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__["registerBlockType"])('us/alert-block', {
+  apiVersion: 2,
+  title: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('US Achtung Quote', 'alert-block'),
+  description: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('Example block written with ESNext standard and JSX support – build step required.', 'starter-block'),
+  category: 'common',
+  icon: 'info-outline',
+  supports: {
+    // Removes support for an HTML mode.
+    html: false
+  },
+  attributes: {
+    content: {
+      type: 'string',
+      source: 'html',
+      selector: 'p'
+    }
+  },
+  edit: function edit(_ref3) {
+    var attributes = _ref3.attributes,
+        setAttributes = _ref3.setAttributes;
+    var blockProps = Object(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["useBlockProps"])();
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["RichText"], _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, blockProps, {
+      tagName: "p",
+      value: attributes.content,
+      formattingControls: ['bold', 'italic'],
+      onChange: function onChange(content) {
+        return setAttributes({
+          content: content
+        });
+      },
+      placeholder: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('Heading...')
+    }));
+  },
+  save: function save(_ref4) {
+    var attributes = _ref4.attributes;
+    var blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["useBlockProps"].save();
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["RichText"].Content, _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, blockProps, {
+      tagName: "p",
+      value: attributes.content
+    }));
+  }
+});
+Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__["registerBlockType"])('us/notiz-block', {
+  apiVersion: 2,
+  title: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('US Notiz Quote', 'notiz-block'),
+  description: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('Example block written with ESNext standard and JSX support – build step required.', 'starter-block'),
+  category: 'common',
+  icon: 'info-outline',
+  supports: {
+    // Removes support for an HTML mode.
+    html: false
+  },
+  attributes: {
+    content: {
+      type: 'string',
+      source: 'html',
+      selector: 'p'
+    }
+  },
+  edit: function edit(_ref5) {
+    var attributes = _ref5.attributes,
+        setAttributes = _ref5.setAttributes;
+    var blockProps = Object(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["useBlockProps"])();
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["RichText"], _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, blockProps, {
+      tagName: "p",
+      value: attributes.content,
+      formattingControls: ['bold', 'italic'],
+      onChange: function onChange(content) {
+        return setAttributes({
+          content: content
+        });
+      },
+      placeholder: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('Heading...')
+    }));
+  },
+  save: function save(_ref6) {
+    var attributes = _ref6.attributes;
+    var blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["useBlockProps"].save();
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["RichText"].Content, _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, blockProps, {
+      tagName: "p",
+      value: attributes.content
+    }));
+  }
+});
+Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__["registerBlockType"])('us/tipp-block', {
+  apiVersion: 2,
+  title: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('US Tipp Quote', 'tipp-block'),
+  description: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('Example block written with ESNext standard and JSX support – build step required.', 'starter-block'),
+  category: 'common',
+  icon: 'info-outline',
+  supports: {
+    // Removes support for an HTML mode.
+    html: false
+  },
+  attributes: {
+    content: {
+      type: 'string',
+      source: 'html',
+      selector: 'p'
+    }
+  },
+  edit: function edit(_ref7) {
+    var attributes = _ref7.attributes,
+        setAttributes = _ref7.setAttributes;
+    var blockProps = Object(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["useBlockProps"])();
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["RichText"], _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, blockProps, {
+      tagName: "p",
+      value: attributes.content,
+      formattingControls: ['bold', 'italic'],
+      onChange: function onChange(content) {
+        return setAttributes({
+          content: content
+        });
+      },
+      placeholder: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('Heading...')
+    }));
+  },
+  save: function save(_ref8) {
+    var attributes = _ref8.attributes;
     var blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["useBlockProps"].save();
     return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["RichText"].Content, _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, blockProps, {
       tagName: "p",
