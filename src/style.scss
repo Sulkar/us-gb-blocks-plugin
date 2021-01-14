@@ -70,21 +70,22 @@
 .wp-block-us-info-block {
 	display: flex;
 	position: relative;
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
+	padding: 0.5rem 0.5rem 0.5rem 3rem;
 	border-width: 0 0 0 5px;
     border-style: solid;
     border-color: #6AB0DE;
     background: #E7F2FA;
 }
 .wp-block-us-info-block:before {
+	position: absolute;
+	left: 5px;
 	content: ' ';
 	background-image: url('./book.svg');
 	background-repeat: no-repeat;
 	background-size: 25px 25px;
 	height: 25px;
 	width: 25px;
-	margin: 5px 10px 5px 5px;
+	margin: 3px 10px 5px 5px;
 }
 
 
@@ -92,21 +93,22 @@
 .wp-block-us-alert-block {
 	display: flex;
 	position: relative;
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
+	padding: 0.5rem 0.5rem 0.5rem 3rem;
 	border-width: 0 0 0 5px;
     border-style: solid;
     border-color: #E06F6C;
     background: #FAE2E2;
 }
 .wp-block-us-alert-block:before {
+	position: absolute;
+	left: 5px;
 	content: ' ';
 	background-image: url('./alert.svg');
 	background-repeat: no-repeat;
 	background-size: 25px 25px;
 	height: 25px;
 	width: 25px;
-	margin: 5px 10px 5px 5px;
+	margin: 3px 10px 5px 5px;
 }
 
 
@@ -114,21 +116,22 @@
 .wp-block-us-notiz-block {
 	display: flex;
 	position: relative;
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
+	padding: 0.5rem 0.5rem 0.5rem 3rem;
 	border-width: 0 0 0 5px;
     border-style: solid;
     border-color: #F0B37E;
     background: #FFF2DB;
 }
 .wp-block-us-notiz-block:before {
+	position: absolute;
+	left: 5px;
 	content: ' ';
 	background-image: url('./note.svg');
 	background-repeat: no-repeat;
 	background-size: 25px 25px;
 	height: 25px;
 	width: 25px;
-	margin: 5px 10px 5px 5px;
+	margin: 3px 10px 5px 5px;
 }
 
 
@@ -136,20 +139,21 @@
 .wp-block-us-tipp-block {
 	display: flex;
 	position: relative;
-	padding-left: 0.5rem;
-	padding-right: 0.5rem;
+	padding: 0.5rem 0.5rem 0.5rem 3rem;
 	border-width: 0 0 0 5px;
     border-style: solid;
     border-color: #78C578;
     background: #E6F9E6;
 }
 .wp-block-us-tipp-block:before {
+	position: absolute;
+	left: 5px;
 	content: ' ';
 	background-image: url('./chat.svg');
 	background-repeat: no-repeat;
 	background-size: 25px 25px;
 	height: 25px;
 	width: 25px;
-	margin: 5px 10px 5px 5px;
+	margin: 3px 10px 5px 5px;
 }
 
