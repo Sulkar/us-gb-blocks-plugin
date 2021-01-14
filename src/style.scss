@@ -4,6 +4,64 @@
  *
  */
 
+/* Aufgaben block */
+.wp-block-us-aufgaben-block {
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	color: tomato;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.wp-block-us-aufgaben-block:before {
+	content: ' ';
+	background-image: url('./task.svg');
+	background-size: 40px 40px;
+	height: 40px;
+	width: 40px;
+	margin-right: 10px;
+}
+/* Video block */
+.wp-block-us-video-block {
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	color: tomato;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.wp-block-us-video-block:before {
+	content: ' ';
+	background-image: url('./video.svg');
+	background-size: 40px 40px;
+	height: 40px;
+	width: 40px;
+	margin-right: 10px;
+}
+/* Lösung block */
+.wp-block-us-loesung-block {
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	color: tomato;
+	font-size: 1.5rem;
+	font-weight: bold;
+}
+.wp-block-us-loesung-block:before {
+	content: ' ';
+	background-image: url('./loesung.svg');
+	background-size: 40px 40px;
+	height: 40px;
+	width: 40px;
+	margin-right: 10px;
+}
+
 /* info block */
 .wp-block-us-info-block {
 	position: relative;

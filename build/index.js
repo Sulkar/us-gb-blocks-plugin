@@ -411,6 +411,135 @@ Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__["registerBlockType"])('us/
       value: attributes.content
     }));
   }
+}); // Aufgaben Icon
+
+Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__["registerBlockType"])('us/aufgaben-block', {
+  apiVersion: 2,
+  title: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('US Aufgabe', 'aufgaben-block'),
+  description: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('Example block written with ESNext standard and JSX support – build step required.', 'starter-block'),
+  category: 'common',
+  icon: 'menu-alt',
+  supports: {
+    // Removes support for an HTML mode.
+    html: false
+  },
+  attributes: {
+    content: {
+      type: 'string',
+      source: 'html',
+      selector: 'p'
+    }
+  },
+  edit: function edit(_ref9) {
+    var attributes = _ref9.attributes,
+        setAttributes = _ref9.setAttributes;
+    var blockProps = Object(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["useBlockProps"])();
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["RichText"], _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, blockProps, {
+      tagName: "p",
+      value: attributes.content,
+      formattingControls: ['bold', 'italic'],
+      onChange: function onChange(content) {
+        return setAttributes({
+          content: content
+        });
+      },
+      placeholder: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('Heading...')
+    }));
+  },
+  save: function save(_ref10) {
+    var attributes = _ref10.attributes;
+    var blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["useBlockProps"].save();
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["RichText"].Content, _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, blockProps, {
+      tagName: "p",
+      value: attributes.content
+    }));
+  }
+}); // Video Icon
+
+Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__["registerBlockType"])('us/video-block', {
+  apiVersion: 2,
+  title: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('US Video', 'video-block'),
+  description: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('Example block written with ESNext standard and JSX support – build step required.', 'starter-block'),
+  category: 'common',
+  icon: 'controls-play',
+  supports: {
+    // Removes support for an HTML mode.
+    html: false
+  },
+  attributes: {
+    content: {
+      type: 'string',
+      source: 'html',
+      selector: 'p'
+    }
+  },
+  edit: function edit(_ref11) {
+    var attributes = _ref11.attributes,
+        setAttributes = _ref11.setAttributes;
+    var blockProps = Object(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["useBlockProps"])();
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["RichText"], _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, blockProps, {
+      tagName: "p",
+      value: attributes.content,
+      formattingControls: ['bold', 'italic'],
+      onChange: function onChange(content) {
+        return setAttributes({
+          content: content
+        });
+      },
+      placeholder: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('Heading...')
+    }));
+  },
+  save: function save(_ref12) {
+    var attributes = _ref12.attributes;
+    var blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["useBlockProps"].save();
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["RichText"].Content, _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, blockProps, {
+      tagName: "p",
+      value: attributes.content
+    }));
+  }
+}); // Lösung Icon
+
+Object(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__["registerBlockType"])('us/loesung-block', {
+  apiVersion: 2,
+  title: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('US Lösung', 'loesung-block'),
+  description: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('Example block written with ESNext standard and JSX support – build step required.', 'starter-block'),
+  category: 'common',
+  icon: 'yes',
+  supports: {
+    // Removes support for an HTML mode.
+    html: false
+  },
+  attributes: {
+    content: {
+      type: 'string',
+      source: 'html',
+      selector: 'p'
+    }
+  },
+  edit: function edit(_ref13) {
+    var attributes = _ref13.attributes,
+        setAttributes = _ref13.setAttributes;
+    var blockProps = Object(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["useBlockProps"])();
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["RichText"], _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, blockProps, {
+      tagName: "p",
+      value: attributes.content,
+      formattingControls: ['bold', 'italic'],
+      onChange: function onChange(content) {
+        return setAttributes({
+          content: content
+        });
+      },
+      placeholder: Object(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__["__"])('Heading...')
+    }));
+  },
+  save: function save(_ref14) {
+    var attributes = _ref14.attributes;
+    var blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["useBlockProps"].save();
+    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["RichText"].Content, _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0___default()({}, blockProps, {
+      tagName: "p",
+      value: attributes.content
+    }));
+  }
 });
 
 /***/ }),

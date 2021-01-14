@@ -4,6 +4,69 @@
  * and in the editor.
  *
  */
+/* Aufgaben block */
+.wp-block-us-aufgaben-block {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: tomato;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.wp-block-us-aufgaben-block:before {
+  content: " ";
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0idG9tYXRvIiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIgMi41YS41LjUgMCAwIDAtLjUuNXYxYS41LjUgMCAwIDAgLjUuNWgxYS41LjUgMCAwIDAgLjUtLjVWM2EuNS41IDAgMCAwLS41LS41SDJ6TTMgM0gydjFoMVYzeiIvPgogIDxwYXRoIGQ9Ik01IDMuNWEuNS41IDAgMCAxIC41LS41aDlhLjUuNSAwIDAgMSAwIDFoLTlhLjUuNSAwIDAgMS0uNS0uNXpNNS41IDdhLjUuNSAwIDAgMCAwIDFoOWEuNS41IDAgMCAwIDAtMWgtOXptMCA0YS41LjUgMCAwIDAgMCAxaDlhLjUuNSAwIDAgMCAwLTFoLTl6Ii8+CiAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBkPSJNMS41IDdhLjUuNSAwIDAgMSAuNS0uNWgxYS41LjUgMCAwIDEgLjUuNXYxYS41LjUgMCAwIDEtLjUuNUgyYS41LjUgMCAwIDEtLjUtLjVWN3pNMiA3aDF2MUgyVjd6bTAgMy41YS41LjUgMCAwIDAtLjUuNXYxYS41LjUgMCAwIDAgLjUuNWgxYS41LjUgMCAwIDAgLjUtLjV2LTFhLjUuNSAwIDAgMC0uNS0uNUgyem0xIC41SDJ2MWgxdi0xeiIvPgo8L3N2Zz4=);
+  background-size: 40px 40px;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+/* Video block */
+.wp-block-us-video-block {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: tomato;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.wp-block-us-video-block:before {
+  content: " ";
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0idG9tYXRvIiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxwYXRoIGQ9Ik0xMS41OTYgOC42OTdsLTYuMzYzIDMuNjkyYy0uNTQuMzEzLTEuMjMzLS4wNjYtMS4yMzMtLjY5N1Y0LjMwOGMwLS42My42OTItMS4wMSAxLjIzMy0uNjk2bDYuMzYzIDMuNjkyYS44MDIuODAyIDAgMCAxIDAgMS4zOTN6Ii8+Cjwvc3ZnPg==);
+  background-size: 40px 40px;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
+/* Lösung block */
+.wp-block-us-loesung-block {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  color: tomato;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.wp-block-us-loesung-block:before {
+  content: " ";
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNiIgZmlsbD0idG9tYXRvIiB2aWV3Qm94PSIwIDAgMTYgMTYiPgogIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgZD0iTTIgMTUuNVYyYTIgMiAwIDAgMSAyLTJoOGEyIDIgMCAwIDEgMiAydjEzLjVhLjUuNSAwIDAgMS0uNzQuNDM5TDggMTMuMDY5bC01LjI2IDIuODdBLjUuNSAwIDAgMSAyIDE1LjV6bTguODU0LTkuNjQ2YS41LjUgMCAwIDAtLjcwOC0uNzA4TDcuNSA3Ljc5MyA2LjM1NCA2LjY0NmEuNS41IDAgMSAwLS43MDguNzA4bDEuNSAxLjVhLjUuNSAwIDAgMCAuNzA4IDBsMy0zeiIvPgo8L3N2Zz4=);
+  background-size: 40px 40px;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+
 /* info block */
 .wp-block-us-info-block {
   position: relative;

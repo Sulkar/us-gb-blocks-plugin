@@ -206,3 +206,153 @@ registerBlockType( 'us/tipp-block', {
     },
 
 });
+
+// Aufgaben Icon
+registerBlockType( 'us/aufgaben-block', {
+	apiVersion: 2,
+	title: __( 'US Aufgabe', 'aufgaben-block' ),
+	description: __(
+		'Example block written with ESNext standard and JSX support – build step required.',
+		'starter-block'
+	),
+	category: 'common',
+	icon: 'menu-alt',
+	supports: {
+		// Removes support for an HTML mode.
+		html: false,
+	},
+	attributes: {
+        content: {
+            type: 'string',
+            source: 'html',
+            selector: 'p',
+        },
+		
+    },
+ 
+	edit: ( { attributes, setAttributes } ) => {	
+		const blockProps = useBlockProps();
+				     
+		return (
+			
+			<RichText	
+				{ ...blockProps }			
+				tagName="p"
+				value={ attributes.content }
+				formattingControls={ [ 'bold', 'italic' ] }
+				onChange={ ( content ) => setAttributes( { content } ) }
+				placeholder={ __( 'Heading...' ) }
+				
+			/>	
+			
+		);
+    },
+ 
+    save: ( { attributes } ) => {
+		const blockProps = useBlockProps.save();
+		return (	
+			<RichText.Content { ...blockProps } tagName="p" value={ attributes.content } />						
+		);
+    },
+
+});
+
+// Video Icon
+registerBlockType( 'us/video-block', {
+	apiVersion: 2,
+	title: __( 'US Video', 'video-block' ),
+	description: __(
+		'Example block written with ESNext standard and JSX support – build step required.',
+		'starter-block'
+	),
+	category: 'common',
+	icon: 'controls-play',
+	supports: {
+		// Removes support for an HTML mode.
+		html: false,
+	},
+	attributes: {
+        content: {
+            type: 'string',
+            source: 'html',
+            selector: 'p',			
+        },
+		
+    },
+ 
+	edit: ( { attributes, setAttributes } ) => {	
+		const blockProps = useBlockProps();
+				     
+		return (
+			
+			<RichText	
+				{ ...blockProps }			
+				tagName="p"
+				value={ attributes.content }
+				formattingControls={ [ 'bold', 'italic' ] }
+				onChange={ ( content ) => setAttributes( { content } ) }
+				placeholder={ __( 'Heading...' ) }
+				
+			/>	
+			
+		);
+    },
+ 
+    save: ( { attributes } ) => {
+		const blockProps = useBlockProps.save();
+		return (	
+			<RichText.Content { ...blockProps } tagName="p" value={ attributes.content } />						
+		);
+    },
+
+});
+
+// Lösung Icon
+registerBlockType( 'us/loesung-block', {
+	apiVersion: 2,
+	title: __( 'US Lösung', 'loesung-block' ),
+	description: __(
+		'Example block written with ESNext standard and JSX support – build step required.',
+		'starter-block'
+	),
+	category: 'common',
+	icon: 'yes',
+	supports: {
+		// Removes support for an HTML mode.
+		html: false,
+	},
+	attributes: {
+        content: {
+            type: 'string',
+            source: 'html',
+            selector: 'p',			
+        },
+		
+    },
+ 
+	edit: ( { attributes, setAttributes } ) => {	
+		const blockProps = useBlockProps();
+				     
+		return (
+			
+			<RichText	
+				{ ...blockProps }			
+				tagName="p"
+				value={ attributes.content }
+				formattingControls={ [ 'bold', 'italic' ] }
+				onChange={ ( content ) => setAttributes( { content } ) }
+				placeholder={ __( 'Heading...' ) }
+				
+			/>	
+			
+		);
+    },
+ 
+    save: ( { attributes } ) => {
+		const blockProps = useBlockProps.save();
+		return (	
+			<RichText.Content { ...blockProps } tagName="p" value={ attributes.content } />						
+		);
+    },
+
+});
