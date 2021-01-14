@@ -36,25 +36,21 @@ registerBlockType( 'us/info-block', {
 		const blockProps = useBlockProps();
 				     
 		return (
-			
 			<RichText	
-				{ ...blockProps }			
+				{ ...blockProps }				
 				tagName="p"
 				value={ attributes.content }
 				formattingControls={ [ 'bold', 'italic' ] }
 				onChange={ ( content ) => setAttributes( { content } ) }
 				placeholder={ __( 'Heading...' ) }
-			/>	
-			
+			/>		
 		);
     },
  
     save: ( { attributes } ) => {
 		const blockProps = useBlockProps.save();
 		return (	
-			
-			<RichText.Content { ...blockProps } tagName="p" value={ attributes.content } />						
-			
+			<RichText.Content { ...blockProps }	 tagName="p" value={ attributes.content } />						
 		);
     },
 

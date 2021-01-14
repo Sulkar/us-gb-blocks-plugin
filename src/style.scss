@@ -18,6 +18,7 @@
 .wp-block-us-aufgaben-block:before {
 	content: ' ';
 	background-image: url('./task.svg');
+	background-repeat: no-repeat;
 	background-size: 40px 40px;
 	height: 40px;
 	width: 40px;
@@ -37,6 +38,7 @@
 .wp-block-us-video-block:before {
 	content: ' ';
 	background-image: url('./video.svg');
+	background-repeat: no-repeat;
 	background-size: 40px 40px;
 	height: 40px;
 	width: 40px;
@@ -56,116 +58,98 @@
 .wp-block-us-loesung-block:before {
 	content: ' ';
 	background-image: url('./loesung.svg');
+	background-repeat: no-repeat;
 	background-size: 40px 40px;
 	height: 40px;
 	width: 40px;
 	margin-right: 10px;
 }
 
-/* info block */
+
+/* info block = blau */
 .wp-block-us-info-block {
+	display: flex;
 	position: relative;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
-    border-top: 30px solid #6AB0DE;
+	border-width: 0 0 0 5px;
+    border-style: solid;
+    border-color: #6AB0DE;
     background: #E7F2FA;
 }
 .wp-block-us-info-block:before {
-	margin-top: -25px;
-	display: block;
 	content: ' ';
-	background-image: url('./info.svg');
-	background-size: 20px 20px;
-	height: 20px;
-	width: 20px;
-}
-.wp-block-us-info-block::after {
-	top: 0;
-	margin-top: -32px;
-	content: 'Info';
-	position: absolute;
-    color: #fff;
-    left: 2rem;
-    font-weight: bold;
+	background-image: url('./book.svg');
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+	height: 25px;
+	width: 25px;
+	margin: 5px 10px 5px 5px;
 }
 
-/* alert block */
+
+/* alert block = rot */
 .wp-block-us-alert-block {
+	display: flex;
 	position: relative;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
-    border-top: 30px solid rgba(217, 83, 79, 0.8);
+	border-width: 0 0 0 5px;
+    border-style: solid;
+    border-color: #E06F6C;
     background: #FAE2E2;
 }
 .wp-block-us-alert-block:before {
-	margin-top: -25px;
-	display: block;
 	content: ' ';
-	background-image: url('./info.svg');
-	background-size: 20px 20px;
-	height: 20px;
-	width: 20px;
-}
-.wp-block-us-alert-block::after {
-	top: 0;
-	margin-top: -32px;
-	content: 'Achtung';
-	position: absolute;
-    color: #fff;
-    left: 2rem;
-    font-weight: bold;
+	background-image: url('./alert.svg');
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+	height: 25px;
+	width: 25px;
+	margin: 5px 10px 5px 5px;
 }
 
-/* notiz block */
+
+/* notiz block = gelb */
 .wp-block-us-notiz-block {
+	display: flex;
 	position: relative;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
-    border-top: 30px solid #F0B37E;
+	border-width: 0 0 0 5px;
+    border-style: solid;
+    border-color: #F0B37E;
     background: #FFF2DB;
 }
 .wp-block-us-notiz-block:before {
-	margin-top: -25px;
-	display: block;
 	content: ' ';
-	background-image: url('./info.svg');
-	background-size: 20px 20px;
-	height: 20px;
-	width: 20px;
+	background-image: url('./note.svg');
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+	height: 25px;
+	width: 25px;
+	margin: 5px 10px 5px 5px;
 }
-.wp-block-us-notiz-block::after {
-	top: 0;
-	margin-top: -32px;
-	content: 'Notiz';
-	position: absolute;
-    color: #fff;
-    left: 2rem;
-    font-weight: bold;
-}
+
 
 /* tipp block = grün */
 .wp-block-us-tipp-block {
+	display: flex;
 	position: relative;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
-    border-top: 30px solid rgba(92, 184, 92, 0.8);
+	border-width: 0 0 0 5px;
+    border-style: solid;
+    border-color: #78C578;
     background: #E6F9E6;
 }
 .wp-block-us-tipp-block:before {
-	margin-top: -25px;
-	display: block;
 	content: ' ';
-	background-image: url('./info.svg');
-	background-size: 20px 20px;
-	height: 20px;
-	width: 20px;
+	background-image: url('./chat.svg');
+	background-repeat: no-repeat;
+	background-size: 25px 25px;
+	height: 25px;
+	width: 25px;
+	margin: 5px 10px 5px 5px;
 }
-.wp-block-us-tipp-block::after {
-	top: 0;
-	margin-top: -32px;
-	content: 'Tipp';
-	position: absolute;
-    color: #fff;
-    left: 2rem;
-    font-weight: bold;
-}
+
