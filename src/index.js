@@ -221,7 +221,7 @@ registerBlockType( 'us/aufgaben-block', {
         content: {
             type: 'string',
             source: 'html',
-            selector: 'p',
+            selector: 'h2',
         },
 		
     },
@@ -233,7 +233,7 @@ registerBlockType( 'us/aufgaben-block', {
 			
 			<RichText	
 				{ ...blockProps }			
-				tagName="p"
+				tagName="h2"
 				value={ attributes.content }
 				formattingControls={ [ 'bold', 'italic' ] }
 				onChange={ ( content ) => setAttributes( { content } ) }
@@ -247,7 +247,7 @@ registerBlockType( 'us/aufgaben-block', {
     save: ( { attributes } ) => {
 		const blockProps = useBlockProps.save();
 		return (	
-			<RichText.Content { ...blockProps } tagName="p" value={ attributes.content } />						
+			<RichText.Content { ...blockProps } tagName="h2" value={ attributes.content } />						
 		);
     },
 
@@ -271,7 +271,7 @@ registerBlockType( 'us/video-block', {
         content: {
             type: 'string',
             source: 'html',
-            selector: 'p',			
+            selector: 'h2',			
         },
 		
     },
@@ -283,7 +283,7 @@ registerBlockType( 'us/video-block', {
 			
 			<RichText	
 				{ ...blockProps }			
-				tagName="p"
+				tagName="h2"
 				value={ attributes.content }
 				formattingControls={ [ 'bold', 'italic' ] }
 				onChange={ ( content ) => setAttributes( { content } ) }
@@ -297,7 +297,7 @@ registerBlockType( 'us/video-block', {
     save: ( { attributes } ) => {
 		const blockProps = useBlockProps.save();
 		return (	
-			<RichText.Content { ...blockProps } tagName="p" value={ attributes.content } />						
+			<RichText.Content { ...blockProps } tagName="h2" value={ attributes.content } />						
 		);
     },
 
@@ -321,7 +321,7 @@ registerBlockType( 'us/loesung-block', {
         content: {
             type: 'string',
             source: 'html',
-            selector: 'p',			
+            selector: 'h2',			
         },
 		
     },
@@ -333,7 +333,7 @@ registerBlockType( 'us/loesung-block', {
 			
 			<RichText	
 				{ ...blockProps }			
-				tagName="p"
+				tagName="h2"
 				value={ attributes.content }
 				formattingControls={ [ 'bold', 'italic' ] }
 				onChange={ ( content ) => setAttributes( { content } ) }
@@ -347,7 +347,7 @@ registerBlockType( 'us/loesung-block', {
     save: ( { attributes } ) => {
 		const blockProps = useBlockProps.save();
 		return (	
-			<RichText.Content { ...blockProps } tagName="p" value={ attributes.content } />						
+			<RichText.Content { ...blockProps } tagName="h2" value={ attributes.content } />						
 		);
     },
 

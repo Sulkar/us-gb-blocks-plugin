@@ -7,13 +7,10 @@
 /* Aufgaben block */
 .wp-block-us-aufgaben-block {
 	display: flex;
-	align-items: center;
 	position: relative;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
 	color: tomato;
-	font-size: 1.5rem;
-	font-weight: bold;
 }
 .wp-block-us-aufgaben-block:before {
 	content: ' ';
@@ -27,13 +24,10 @@
 /* Video block */
 .wp-block-us-video-block {
 	display: flex;
-	align-items: center;
 	position: relative;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
 	color: tomato;
-	font-size: 1.5rem;
-	font-weight: bold;
 }
 .wp-block-us-video-block:before {
 	content: ' ';
@@ -47,13 +41,10 @@
 /* Lösung block */
 .wp-block-us-loesung-block {
 	display: flex;
-	align-items: center;
 	position: relative;
 	padding-left: 0.5rem;
 	padding-right: 0.5rem;
 	color: tomato;
-	font-size: 1.5rem;
-	font-weight: bold;
 }
 .wp-block-us-loesung-block:before {
 	content: ' ';
