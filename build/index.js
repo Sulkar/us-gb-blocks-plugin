@@ -1,1 +1,624 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{6:function(t,e,n){}}]),function(t){function e(e){for(var o,i,a=e[0],s=e[1],u=e[2],p=0,b=[];p<a.length;p++)i=a[p],Object.prototype.hasOwnProperty.call(r,i)&&r[i]&&b.push(r[i][0]),r[i]=0;for(o in s)Object.prototype.hasOwnProperty.call(s,o)&&(t[o]=s[o]);for(l&&l(e);b.length;)b.shift()();return c.push.apply(c,u||[]),n()}function n(){for(var t,e=0;e<c.length;e++){for(var n=c[e],o=!0,a=1;a<n.length;a++){var s=n[a];0!==r[s]&&(o=!1)}o&&(c.splice(e--,1),t=i(i.s=n[0]))}return t}var o={},r={0:0},c=[];function i(e){if(o[e])return o[e].exports;var n=o[e]={i:e,l:!1,exports:{}};return t[e].call(n.exports,n,n.exports,i),n.l=!0,n.exports}i.m=t,i.c=o,i.d=function(t,e,n){i.o(t,e)||Object.defineProperty(t,e,{enumerable:!0,get:n})},i.r=function(t){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(t,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(t,"__esModule",{value:!0})},i.t=function(t,e){if(1&e&&(t=i(t)),8&e)return t;if(4&e&&"object"==typeof t&&t&&t.__esModule)return t;var n=Object.create(null);if(i.r(n),Object.defineProperty(n,"default",{enumerable:!0,value:t}),2&e&&"string"!=typeof t)for(var o in t)i.d(n,o,function(e){return t[e]}.bind(null,o));return n},i.n=function(t){var e=t&&t.__esModule?function(){return t.default}:function(){return t};return i.d(e,"a",e),e},i.o=function(t,e){return Object.prototype.hasOwnProperty.call(t,e)},i.p="";var a=window.webpackJsonp=window.webpackJsonp||[],s=a.push.bind(a);a.push=e,a=a.slice();for(var u=0;u<a.length;u++)e(a[u]);var l=s;c.push([5,1]),n()}([function(t,e){t.exports=window.wp.blockEditor},function(t,e){t.exports=window.wp.i18n},function(t,e){function n(){return t.exports=n=Object.assign||function(t){for(var e=1;e<arguments.length;e++){var n=arguments[e];for(var o in n)Object.prototype.hasOwnProperty.call(n,o)&&(t[o]=n[o])}return t},n.apply(this,arguments)}t.exports=n},function(t,e){t.exports=window.wp.element},function(t,e){t.exports=window.wp.blocks},function(t,e,n){"use strict";n.r(e);var o=n(2),r=n.n(o),c=n(3),i=n(4),a=n(0),s=n(1);n(6),n(7),Object(i.registerBlockType)("us/info-block",{apiVersion:2,title:Object(s.__)("US Info Quote","info-block"),description:Object(s.__)("Example block written with ESNext standard and JSX support – build step required.","starter-block"),category:"common",icon:"info-outline",supports:{html:!1},attributes:{content:{type:"string",source:"html",selector:"p"}},edit:function(t){var e=t.attributes,n=t.setAttributes,o=Object(a.useBlockProps)();return Object(c.createElement)(a.RichText,r()({},o,{tagName:"p",value:e.content,formattingControls:["bold","italic"],onChange:function(t){return n({content:t})},placeholder:Object(s.__)("Heading...")}))},save:function(t){var e=t.attributes,n=a.useBlockProps.save();return Object(c.createElement)(a.RichText.Content,r()({},n,{tagName:"p",value:e.content}))}}),Object(i.registerBlockType)("us/alert-block",{apiVersion:2,title:Object(s.__)("US Achtung Quote","alert-block"),description:Object(s.__)("Example block written with ESNext standard and JSX support – build step required.","starter-block"),category:"common",icon:"info-outline",supports:{html:!1},attributes:{content:{type:"string",source:"html",selector:"p"}},edit:function(t){var e=t.attributes,n=t.setAttributes,o=Object(a.useBlockProps)();return Object(c.createElement)(a.RichText,r()({},o,{tagName:"p",value:e.content,formattingControls:["bold","italic"],onChange:function(t){return n({content:t})},placeholder:Object(s.__)("Heading...")}))},save:function(t){var e=t.attributes,n=a.useBlockProps.save();return Object(c.createElement)(a.RichText.Content,r()({},n,{tagName:"p",value:e.content}))}}),Object(i.registerBlockType)("us/notiz-block",{apiVersion:2,title:Object(s.__)("US Notiz Quote","notiz-block"),description:Object(s.__)("Example block written with ESNext standard and JSX support – build step required.","starter-block"),category:"common",icon:"info-outline",supports:{html:!1},attributes:{content:{type:"string",source:"html",selector:"p"}},edit:function(t){var e=t.attributes,n=t.setAttributes,o=Object(a.useBlockProps)();return Object(c.createElement)(a.RichText,r()({},o,{tagName:"p",value:e.content,formattingControls:["bold","italic"],onChange:function(t){return n({content:t})},placeholder:Object(s.__)("Heading...")}))},save:function(t){var e=t.attributes,n=a.useBlockProps.save();return Object(c.createElement)(a.RichText.Content,r()({},n,{tagName:"p",value:e.content}))}}),Object(i.registerBlockType)("us/tipp-block",{apiVersion:2,title:Object(s.__)("US Tipp Quote","tipp-block"),description:Object(s.__)("Example block written with ESNext standard and JSX support – build step required.","starter-block"),category:"common",icon:"info-outline",supports:{html:!1},attributes:{content:{type:"string",source:"html",selector:"p"}},edit:function(t){var e=t.attributes,n=t.setAttributes,o=Object(a.useBlockProps)();return Object(c.createElement)(a.RichText,r()({},o,{tagName:"p",value:e.content,formattingControls:["bold","italic"],onChange:function(t){return n({content:t})},placeholder:Object(s.__)("Heading...")}))},save:function(t){var e=t.attributes,n=a.useBlockProps.save();return Object(c.createElement)(a.RichText.Content,r()({},n,{tagName:"p",value:e.content}))}}),Object(i.registerBlockType)("us/aufgaben-block",{apiVersion:2,title:Object(s.__)("US Aufgabe","aufgaben-block"),description:Object(s.__)("Example block written with ESNext standard and JSX support – build step required.","starter-block"),category:"common",icon:"menu-alt",supports:{html:!1},attributes:{content:{type:"string",source:"html",selector:"h2"}},edit:function(t){var e=t.attributes,n=t.setAttributes,o=Object(a.useBlockProps)();return Object(c.createElement)(a.RichText,r()({},o,{tagName:"h2",value:e.content,formattingControls:["bold","italic"],onChange:function(t){return n({content:t})},placeholder:Object(s.__)("Heading...")}))},save:function(t){var e=t.attributes,n=a.useBlockProps.save();return Object(c.createElement)(a.RichText.Content,r()({},n,{tagName:"h2",value:e.content}))}}),Object(i.registerBlockType)("us/video-block",{apiVersion:2,title:Object(s.__)("US Video","video-block"),description:Object(s.__)("Example block written with ESNext standard and JSX support – build step required.","starter-block"),category:"common",icon:"controls-play",supports:{html:!1},attributes:{content:{type:"string",source:"html",selector:"h2"}},edit:function(t){var e=t.attributes,n=t.setAttributes,o=Object(a.useBlockProps)();return Object(c.createElement)(a.RichText,r()({},o,{tagName:"h2",value:e.content,formattingControls:["bold","italic"],onChange:function(t){return n({content:t})},placeholder:Object(s.__)("Heading...")}))},save:function(t){var e=t.attributes,n=a.useBlockProps.save();return Object(c.createElement)(a.RichText.Content,r()({},n,{tagName:"h2",value:e.content}))}}),Object(i.registerBlockType)("us/loesung-block",{apiVersion:2,title:Object(s.__)("US Lösung","loesung-block"),description:Object(s.__)("Example block written with ESNext standard and JSX support – build step required.","starter-block"),category:"common",icon:"yes",supports:{html:!1},attributes:{content:{type:"string",source:"html",selector:"h2"}},edit:function(t){var e=t.attributes,n=t.setAttributes,o=Object(a.useBlockProps)();return Object(c.createElement)(a.RichText,r()({},o,{tagName:"h2",value:e.content,formattingControls:["bold","italic"],onChange:function(t){return n({content:t})},placeholder:Object(s.__)("Heading...")}))},save:function(t){var e=t.attributes,n=a.useBlockProps.save();return Object(c.createElement)(a.RichText.Content,r()({},n,{tagName:"h2",value:e.content}))}})},,function(t,e,n){}]);
+/******/ (function() { // webpackBootstrap
+/******/ 	"use strict";
+/******/ 	var __webpack_modules__ = ({
+
+/***/ "./src/index.js":
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime/helpers/extends */ "./node_modules/@babel/runtime/helpers/esm/extends.js");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
+/* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/blocks */ "@wordpress/blocks");
+/* harmony import */ var _wordpress_blocks__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
+/* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @wordpress/i18n */ "@wordpress/i18n");
+/* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./style.scss */ "./src/style.scss");
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./editor.scss */ "./src/editor.scss");
+
+
+
+/**
+ * Registers a new block provided a unique name and an object defining its behavior.
+ *
+ * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
+ */
+
+
+ // translation
+
+
+/**
+ * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
+ * All files containing `style` keyword are bundled together. The code used
+ * gets applied both to the front of your site and to the editor.
+ *
+ * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
+ */
+
+
+
+/**
+ * Every block starts by registering a new block type definition.
+ *
+ * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
+ */
+//registerBlockType('create-block/us-gb-blocks', {
+
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)("us/info-block", {
+  apiVersion: 2,
+  title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)("US Info Quote", "info-block"),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)("Example block written with ESNext standard and JSX support – build step required."),
+  category: "common",
+  icon: "info-outline",
+  supports: {
+    // Removes support for an HTML mode.
+    html: false
+  },
+  attributes: {
+    content: {
+      type: "string",
+      source: "html",
+      selector: "p"
+    }
+  },
+  edit: _ref => {
+    let {
+      attributes,
+      setAttributes
+    } = _ref;
+    const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)();
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, blockProps, {
+      tagName: "p",
+      value: attributes.content,
+      onChange: content => setAttributes({
+        content
+      }),
+      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)("Heading...")
+    }));
+  },
+  save: _ref2 => {
+    let {
+      attributes
+    } = _ref2;
+    const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps.save();
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText.Content, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, blockProps, {
+      tagName: "p",
+      value: attributes.content
+    }));
+  }
+});
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('us/alert-block', {
+  apiVersion: 2,
+  title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('US Achtung Quote', 'alert-block'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Example block written with ESNext standard and JSX support – build step required.'),
+  category: 'common',
+  icon: 'info-outline',
+  supports: {
+    // Removes support for an HTML mode.
+    html: false
+  },
+  attributes: {
+    content: {
+      type: 'string',
+      source: 'html',
+      selector: 'p'
+    }
+  },
+  edit: _ref3 => {
+    let {
+      attributes,
+      setAttributes
+    } = _ref3;
+    const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)();
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, blockProps, {
+      tagName: "p",
+      value: attributes.content,
+      onChange: content => setAttributes({
+        content
+      }),
+      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Heading...')
+    }));
+  },
+  save: _ref4 => {
+    let {
+      attributes
+    } = _ref4;
+    const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps.save();
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText.Content, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, blockProps, {
+      tagName: "p",
+      value: attributes.content
+    }));
+  }
+});
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('us/notiz-block', {
+  apiVersion: 2,
+  title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('US Notiz Quote', 'notiz-block'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Example block written with ESNext standard and JSX support – build step required.'),
+  category: 'common',
+  icon: 'info-outline',
+  supports: {
+    // Removes support for an HTML mode.
+    html: false
+  },
+  attributes: {
+    content: {
+      type: 'string',
+      source: 'html',
+      selector: 'p'
+    }
+  },
+  edit: _ref5 => {
+    let {
+      attributes,
+      setAttributes
+    } = _ref5;
+    const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)();
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, blockProps, {
+      tagName: "p",
+      value: attributes.content,
+      onChange: content => setAttributes({
+        content
+      }),
+      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Heading...')
+    }));
+  },
+  save: _ref6 => {
+    let {
+      attributes
+    } = _ref6;
+    const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps.save();
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText.Content, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, blockProps, {
+      tagName: "p",
+      value: attributes.content
+    }));
+  }
+});
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('us/tipp-block', {
+  apiVersion: 2,
+  title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('US Tipp Quote', 'tipp-block'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Example block written with ESNext standard and JSX support – build step required.'),
+  category: 'common',
+  icon: 'info-outline',
+  supports: {
+    // Removes support for an HTML mode.
+    html: false
+  },
+  attributes: {
+    content: {
+      type: 'string',
+      source: 'html',
+      selector: 'p'
+    }
+  },
+  edit: _ref7 => {
+    let {
+      attributes,
+      setAttributes
+    } = _ref7;
+    const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)();
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, blockProps, {
+      tagName: "p",
+      value: attributes.content,
+      onChange: content => setAttributes({
+        content
+      }),
+      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Heading...')
+    }));
+  },
+  save: _ref8 => {
+    let {
+      attributes
+    } = _ref8;
+    const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps.save();
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText.Content, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, blockProps, {
+      tagName: "p",
+      value: attributes.content
+    }));
+  }
+}); // Aufgaben Icon
+
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('us/aufgaben-block', {
+  apiVersion: 2,
+  title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('US Aufgabe', 'aufgaben-block'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Example block written with ESNext standard and JSX support – build step required.'),
+  category: 'common',
+  icon: 'menu-alt',
+  supports: {
+    // Removes support for an HTML mode.
+    html: false
+  },
+  attributes: {
+    content: {
+      type: 'string',
+      source: 'html',
+      selector: 'h2'
+    }
+  },
+  edit: _ref9 => {
+    let {
+      attributes,
+      setAttributes
+    } = _ref9;
+    const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)();
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, blockProps, {
+      tagName: "h2",
+      value: attributes.content,
+      onChange: content => setAttributes({
+        content
+      }),
+      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Heading...')
+    }));
+  },
+  save: _ref10 => {
+    let {
+      attributes
+    } = _ref10;
+    const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps.save();
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText.Content, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, blockProps, {
+      tagName: "h2",
+      value: attributes.content
+    }));
+  }
+}); // Video Icon
+
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('us/video-block', {
+  apiVersion: 2,
+  title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('US Video', 'video-block'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Example block written with ESNext standard and JSX support – build step required.'),
+  category: 'common',
+  icon: 'controls-play',
+  supports: {
+    // Removes support for an HTML mode.
+    html: false
+  },
+  attributes: {
+    content: {
+      type: 'string',
+      source: 'html',
+      selector: 'h2'
+    }
+  },
+  edit: _ref11 => {
+    let {
+      attributes,
+      setAttributes
+    } = _ref11;
+    const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)();
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, blockProps, {
+      tagName: "h2",
+      value: attributes.content,
+      onChange: content => setAttributes({
+        content
+      }),
+      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Heading...')
+    }));
+  },
+  save: _ref12 => {
+    let {
+      attributes
+    } = _ref12;
+    const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps.save();
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText.Content, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, blockProps, {
+      tagName: "h2",
+      value: attributes.content
+    }));
+  }
+}); // Lösung Icon
+
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_2__.registerBlockType)('us/loesung-block', {
+  apiVersion: 2,
+  title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('US Lösung', 'loesung-block'),
+  description: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Example block written with ESNext standard and JSX support – build step required.'),
+  category: 'common',
+  icon: 'yes',
+  supports: {
+    // Removes support for an HTML mode.
+    html: false
+  },
+  attributes: {
+    content: {
+      type: 'string',
+      source: 'html',
+      selector: 'h2'
+    }
+  },
+  edit: _ref13 => {
+    let {
+      attributes,
+      setAttributes
+    } = _ref13;
+    const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)();
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, blockProps, {
+      tagName: "h2",
+      value: attributes.content,
+      onChange: content => setAttributes({
+        content
+      }),
+      placeholder: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_4__.__)('Heading...')
+    }));
+  },
+  save: _ref14 => {
+    let {
+      attributes
+    } = _ref14;
+    const blockProps = _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps.save();
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_1__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.RichText.Content, (0,_babel_runtime_helpers_extends__WEBPACK_IMPORTED_MODULE_0__["default"])({}, blockProps, {
+      tagName: "h2",
+      value: attributes.content
+    }));
+  }
+});
+
+/***/ }),
+
+/***/ "./src/editor.scss":
+/*!*************************!*\
+  !*** ./src/editor.scss ***!
+  \*************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "./src/style.scss":
+/*!************************!*\
+  !*** ./src/style.scss ***!
+  \************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
+/***/ "@wordpress/block-editor":
+/*!*************************************!*\
+  !*** external ["wp","blockEditor"] ***!
+  \*************************************/
+/***/ (function(module) {
+
+module.exports = window["wp"]["blockEditor"];
+
+/***/ }),
+
+/***/ "@wordpress/blocks":
+/*!********************************!*\
+  !*** external ["wp","blocks"] ***!
+  \********************************/
+/***/ (function(module) {
+
+module.exports = window["wp"]["blocks"];
+
+/***/ }),
+
+/***/ "@wordpress/element":
+/*!*********************************!*\
+  !*** external ["wp","element"] ***!
+  \*********************************/
+/***/ (function(module) {
+
+module.exports = window["wp"]["element"];
+
+/***/ }),
+
+/***/ "@wordpress/i18n":
+/*!******************************!*\
+  !*** external ["wp","i18n"] ***!
+  \******************************/
+/***/ (function(module) {
+
+module.exports = window["wp"]["i18n"];
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime/helpers/esm/extends.js":
+/*!************************************************************!*\
+  !*** ./node_modules/@babel/runtime/helpers/esm/extends.js ***!
+  \************************************************************/
+/***/ (function(__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": function() { return /* binding */ _extends; }
+/* harmony export */ });
+function _extends() {
+  _extends = Object.assign || function (target) {
+    for (var i = 1; i < arguments.length; i++) {
+      var source = arguments[i];
+
+      for (var key in source) {
+        if (Object.prototype.hasOwnProperty.call(source, key)) {
+          target[key] = source[key];
+        }
+      }
+    }
+
+    return target;
+  };
+
+  return _extends.apply(this, arguments);
+}
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			// no module.id needed
+/******/ 			// no module.loaded needed
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/chunk loaded */
+/******/ 	!function() {
+/******/ 		var deferred = [];
+/******/ 		__webpack_require__.O = function(result, chunkIds, fn, priority) {
+/******/ 			if(chunkIds) {
+/******/ 				priority = priority || 0;
+/******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
+/******/ 				deferred[i] = [chunkIds, fn, priority];
+/******/ 				return;
+/******/ 			}
+/******/ 			var notFulfilled = Infinity;
+/******/ 			for (var i = 0; i < deferred.length; i++) {
+/******/ 				var chunkIds = deferred[i][0];
+/******/ 				var fn = deferred[i][1];
+/******/ 				var priority = deferred[i][2];
+/******/ 				var fulfilled = true;
+/******/ 				for (var j = 0; j < chunkIds.length; j++) {
+/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every(function(key) { return __webpack_require__.O[key](chunkIds[j]); })) {
+/******/ 						chunkIds.splice(j--, 1);
+/******/ 					} else {
+/******/ 						fulfilled = false;
+/******/ 						if(priority < notFulfilled) notFulfilled = priority;
+/******/ 					}
+/******/ 				}
+/******/ 				if(fulfilled) {
+/******/ 					deferred.splice(i--, 1)
+/******/ 					var r = fn();
+/******/ 					if (r !== undefined) result = r;
+/******/ 				}
+/******/ 			}
+/******/ 			return result;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	!function() {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = function(module) {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				function() { return module['default']; } :
+/******/ 				function() { return module; };
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	!function() {
+/******/ 		// no baseURI
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"index": 0,
+/******/ 			"./style-index": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		__webpack_require__.O.j = function(chunkId) { return installedChunks[chunkId] === 0; };
+/******/ 		
+/******/ 		// install a JSONP callback for chunk loading
+/******/ 		var webpackJsonpCallback = function(parentChunkLoadingFunction, data) {
+/******/ 			var chunkIds = data[0];
+/******/ 			var moreModules = data[1];
+/******/ 			var runtime = data[2];
+/******/ 			// add "moreModules" to the modules object,
+/******/ 			// then flag all "chunkIds" as loaded and fire callback
+/******/ 			var moduleId, chunkId, i = 0;
+/******/ 			if(chunkIds.some(function(id) { return installedChunks[id] !== 0; })) {
+/******/ 				for(moduleId in moreModules) {
+/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
+/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
+/******/ 					}
+/******/ 				}
+/******/ 				if(runtime) var result = runtime(__webpack_require__);
+/******/ 			}
+/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
+/******/ 			for(;i < chunkIds.length; i++) {
+/******/ 				chunkId = chunkIds[i];
+/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
+/******/ 					installedChunks[chunkId][0]();
+/******/ 				}
+/******/ 				installedChunks[chunkId] = 0;
+/******/ 			}
+/******/ 			return __webpack_require__.O(result);
+/******/ 		}
+/******/ 		
+/******/ 		var chunkLoadingGlobal = self["webpackChunkus_gb_blocks"] = self["webpackChunkus_gb_blocks"] || [];
+/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
+/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
+/******/ 	}();
+/******/ 	
+/************************************************************************/
+/******/ 	
+/******/ 	// startup
+/******/ 	// Load entry module and return exports
+/******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["./style-index"], function() { return __webpack_require__("./src/index.js"); })
+/******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
+/******/ 	
+/******/ })()
+;
+//# sourceMappingURL=index.js.map

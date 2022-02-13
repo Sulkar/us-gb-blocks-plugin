@@ -1,10 +1,9 @@
 /**
  * The following styles get applied inside the editor only.
  *
+ * Replace them with your own styles or remove the file completely.
  */
 
-.wp-block-us-aufgaben-block,
-.wp-block-us-video-block,
-.wp-block-us-loesung-block {
-	color: tomato !important;
+.wp-block-create-block-us-gb-blocks {
+	border: 1px dotted #f00;
 }
